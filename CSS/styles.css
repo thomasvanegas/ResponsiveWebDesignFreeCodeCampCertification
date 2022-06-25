@@ -1,0 +1,63 @@
+/* Importando tipografias/fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap'); /* Semibold 600 Italic Poppins*/
+
+/* Estableciendo el tamaño base de las fuentes */
+:root {
+    font-size: 16px;
+}
+
+/* Cambiando el color de la tipografia */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: blueviolet;
+    font-size: 3rem;
+}
+
+/* Utilizando clases de CSS */
+.texto-rojo {
+    color: black;
+}
+
+/* Cambiando el tamaño de la fuente y la familia de las fuentes*/
+.fuente-grande {
+    color: goldenrod;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif, Helvetica; /* Degradación de fuentes */
+}
+
+/* Modificando tipo de fuente y tamaño de fuente en los elementos de párrafo */
+p,
+a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+/* Asignando un tamaño estándar para las imágenes del documento*/
+.img-estandar {
+    height: 30rem;
+    width: 28rem;
+    border-color: gold;
+    border-width: 0.4rem;
+    border-style: groove;
+    /* border-radius: 0.8rem; */
+    border-radius: 50%;
+}
+
+/* Modificando el color de fondo de los elementos*/
+.background-color{
+    background-color: silver;
+}
+
+/* Asignando tipografia al pié de página <footer></footer> */
+footer {
+    font-family: 'Poppins', sans-serif;;
+    font-size: 1rem;
+}
+
+/* Selectores de atributos 
+
+[type = "checkbox"] {
+    margin: 10px;
+}
+
+*/

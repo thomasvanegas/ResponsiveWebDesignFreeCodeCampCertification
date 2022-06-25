@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios con Radio Buttons</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formularios con Radio Buttons</h1>
+    </header>
+
+    <main>
+      <form action="">
+        <div>
+          <h2>Seleccione su Sexo</h2>
+
+          <label for="masculino"
+            >Masculino
+            <input
+              type="radio"
+              name="seleccionar-sexo"
+              id="masculino"
+              value="masculino"
+              checked
+            />
+          </label>
+
+          <label for="femenino"
+            >Femenino
+            <input
+              type="radio"
+              name="seleccionar-sexo"
+              id="femenino"
+              value="femenino"
+            />
+          </label>
+
+          <label for="no-decirlo"
+            >Prefiero no decirlo
+            <input
+              type="radio"
+              name="seleccionar-sexo"
+              id="no-decirlo"
+              value="prefiero no decirlo"
+            />
+          </label>
+        </div>
+
+        <!--  
+          El atributo name="" permite crear un grupo de radio buttons.
+          El atributo for asocia el label con un id de un input.
+        -->
+
+        <div>
+          <h2>Seleccione los Electrodomésticos que Hay en su Hogar</h2>
+
+          <label for="lavadora"
+            >Lavadora
+            <input
+              type="checkbox"
+              name="electrodomesticos"
+              id="lavadora"
+              value="lavadora"
+            />
+          </label>
+
+          <label for="computador"
+            >Computador
+            <input
+              type="checkbox"
+              name="electrodomesticos"
+              id="computador"
+              value="computador"
+            />
+          </label>
+
+          <label for="estufa"
+            >Estufa
+            <input
+              type="checkbox"
+              name="electrodomesticos"
+              id="estufa"
+              value="estufa"
+              checked
+            />
+          </label>
+        </div>
+
+        <br />
+        <hr />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
