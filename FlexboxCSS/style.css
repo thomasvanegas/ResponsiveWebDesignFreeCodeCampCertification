@@ -1,0 +1,31 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    height: 40vh;
+    background-color: black;
+    display: flex;
+    /* inline-flex*/
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    flex-flow: column wrap;
+    /*flex-flow: flex-direction flex-wrap*/
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-item {
+    background-color: gray;
+    color: greenyellow;
+    font-size: 2rem;
+    border-color: greenyellow;
+    border-width: 0.3rem;
+    border-style: solid;
+    margin-top: 2px;
+    width: 50vw;
+}
