@@ -25,8 +25,10 @@
     flex-flow: column wrap;
     /*flex-flow: flex-direction flex-wrap*/
     justify-content: space-evenly;
+
     /*align-items: center; --> TRABAJA PARA FLEX-ITEMS DE UNA SOLA LÍNEA O CUANDO EL FLEX-CONTAINER ESTÁ
     EN NOWRAP*/
+
     align-content: space-evenly;
     /* CONSIDERA TODAS LAS LÍNEAS, O CUANDO HAYA WRAP */
 }
@@ -41,21 +43,28 @@
     border-style: solid;
     margin-top: 2px;
     /*width: 50vw;*/
-    height: 10vh;
 
     /* Propiedades de CSS Flexbox para los flex-items (children element) */
     flex-grow: 0;
     flex-shrink: 1;
-    flex-basis: auto;
-
+    flex-basis: 10vh;
 }
 
 .flex-item:nth-child(2) {
-    flex-grow: 2;
+    flex-grow: 0;
 }
 
 .flex-item:nth-child(4) {
     flex-shrink: 2;
     /* Cuando no haya espacio en el contenedor el Flex Item 4 se va a reducir 
     2 veces menos el espacio que se reduce */
+}
+
+.flex-item:nth-child(1) {
+
+    order: 1;
+    /* Se lleva al flex item 1 al final del flex-container*/
+    align-self: flex-end;
+    /*Sobreescribe la propiedad align-items del flex-container*/
+
 }
