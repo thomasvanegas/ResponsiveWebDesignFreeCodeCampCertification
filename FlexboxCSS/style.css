@@ -3,12 +3,21 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .flex-container {
-    height: 40vh;
+    /* ESTILOS DEL CONTENEDOR */
+    height: 50vh;
     background-color: black;
+    border-color: cadetblue;
+    border-width: 0.2rem 0 0 0;
+    border-style: solid;
+
+    /* APLICANDO CSS FLEXBOX LAYOUT AL FLEX-CONTAINER */
     display: flex;
     /* inline-flex*/
     flex-direction: row;
@@ -16,10 +25,14 @@
     flex-flow: column wrap;
     /*flex-flow: flex-direction flex-wrap*/
     justify-content: space-evenly;
-    align-items: center;
+    /*align-items: center; --> TRABAJA PARA FLEX-ITEMS DE UNA SOLA LÍNEA O CUANDO EL FLEX-CONTAINER ESTÁ
+    EN NOWRAP*/
+    align-content: space-evenly;
+    /* CONSIDERA TODAS LAS LÍNEAS, O CUANDO HAYA WRAP */
 }
 
 .flex-item {
+    padding: 5px;
     background-color: gray;
     color: greenyellow;
     font-size: 2rem;
@@ -27,5 +40,22 @@
     border-width: 0.3rem;
     border-style: solid;
     margin-top: 2px;
-    width: 50vw;
+    /*width: 50vw;*/
+    height: 10vh;
+
+    /* Propiedades de CSS Flexbox para los flex-items (children element) */
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+
+}
+
+.flex-item:nth-child(2) {
+    flex-grow: 2;
+}
+
+.flex-item:nth-child(4) {
+    flex-shrink: 2;
+    /* Cuando no haya espacio en el contenedor el Flex Item 4 se va a reducir 
+    2 veces menos el espacio que se reduce */
 }
